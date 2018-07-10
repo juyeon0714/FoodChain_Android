@@ -29,7 +29,7 @@
         >
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="48dp"
             android:layout_centerInParent="true"
             android:orientation="horizontal"
             >
@@ -37,6 +37,7 @@
             //이미지 없음
             <ImageView
                 android:id="@+id/page_store_btn"
+                android:src="@drawable/store_color"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_weight="1"
@@ -45,6 +46,7 @@
 
             <ImageView
                 android:id="@+id/page_ref_btn"
+                android:src="@drawable/refri_x"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_weight="1"
@@ -52,6 +54,7 @@
 
             <ImageView
                 android:id="@+id/page_alarm_btn"
+                android:src="@drawable/alert_x"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_weight="1"
@@ -59,6 +62,7 @@
 
             <ImageView
                 android:id="@+id/page_setting_btn"
+                android:src="@drawable/mypage_x"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_weight="1"

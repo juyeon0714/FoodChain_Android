@@ -2,9 +2,11 @@ package com.team.foodchain
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import kotlinx.android.synthetic.main.activity_join.*
+import kotlinx.android.synthetic.main.activity_login.*
 
 class JoinActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?) {

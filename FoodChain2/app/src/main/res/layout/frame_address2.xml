@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    
-    <TextView
-        android:layout_width="254dp"
-        android:layout_height="97dp"
-        android:text="도로명, 건물명, 지번에 대해 통합 검색
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-- 도로명 + 건물번호
-- 동/읍/면/리
-- 건물명, 아파트명"
-        android:textSize="15dp"
-        android:textColor="#2B2B2B"
+
+    <TextView
+        android:layout_width="175dp"
+        android:layout_height="68dp"
+        android:text="
+도로명 + 건물번호
+지역명(동/리) + 번지
+지역명(동/리) + 건물명(아파트명)"
+        android:textSize="12dp"
+        android:textColor="#DCDCDC"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="102dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginLeft="52dp"
         />
 
-</RelativeLayout>
+</LinearLayout>
