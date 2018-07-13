@@ -1,6 +1,28 @@
 <resources>
     <string name="app_name">FoodChain</string>
+<string-array name="분류">
+    <item>과일</item>
+    <item>야채</item>
+    <item>육류</item>
+</string-array>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="시작시각">
+        <item>17시</item>
+        <item>18시</item>
+        <item>19시</item>
+        <item>20시</item>
+        <item>21시</item>
+        <item>22시</item>
+
+    </string-array>
+
+    <string-array name="마감시각">
+        <item>18시</item>
+        <item>19시</item>
+        <item>20시</item>
+        <item>21시</item>
+        <item>22시</item>
+        <item>23시</item>
+        <item>24시</item>
+    </string-array>
 </resources>

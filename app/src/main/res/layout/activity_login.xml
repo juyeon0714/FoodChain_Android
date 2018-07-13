@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
     <RelativeLayout
@@ -107,7 +108,7 @@
             android:layout_width="304dp"
             android:layout_height="44dp"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/btn_login"
+            android:src="@drawable/login_button_not"
             />
     </RelativeLayout>
 
@@ -151,7 +152,7 @@
             android:layout_height="20.16dp"
             android:background="#707070"
             android:layout_toLeftOf="@+id/login_search_pwd"
-            android:layout_marginRight="12dp"
+            android:layout_marginRight="19.12dp"
             />
 
         <TextView

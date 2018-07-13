@@ -38,6 +38,7 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_page)
         addFragment(StoreTab())
         page_store_btn.isSelected = true
+        page_store_btn.setOnClickListener(this)
         page_ref_btn.setOnClickListener(this)
         page_alarm_btn.setOnClickListener(this)
         page_setting_btn.setOnClickListener(this)
@@ -45,7 +46,7 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
         if(isFirst == 1){
             val builder = AlertDialog.Builder(this@HomeActivity)
 
-            builder.setMessage("가입하고 우리 동네 상품을 찾아보세요! " +
+            builder.setMessage("많은 상품들이 당신의 주변에서 기다리고 있어요." +
                     "우리 동네를 설정하고 시작하세요!")
             builder.setPositiveButton("우리 동네 설정하고 시작하기") { dialog, which ->
                 setContentView(R.layout.activity_address)
@@ -53,7 +54,8 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
             }
 
             builder.setNeutralButton("둘러보기") { dialog, which ->
-                setContentView(R.layout.fragment_store)
+                setContentView(R.layout.activity_page)
+                addFragment(StoreTab())
 //            root_layout.setBackgroundColor(Color.TRANSPARENT)
             }
 
@@ -61,7 +63,7 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
 
             dialog.show()
 
-        }
+                                                                                                       }
 
 
     }

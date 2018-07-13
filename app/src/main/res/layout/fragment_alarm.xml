@@ -7,8 +7,7 @@
     
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="46dp"
-        android:background="#BDEB64">
+        android:layout_height="46dp">
         
         <TextView
             android:layout_width="26dp"

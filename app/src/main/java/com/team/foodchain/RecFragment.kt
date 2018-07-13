@@ -14,7 +14,7 @@ class RecFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_rec,container,false)
+        val view = inflater.inflate(R.layout.fragment_new,container,false)
         val position = arguments?.getInt("position",0)
         view.tag = position
         val image = view.findViewById<ImageView>(R.id.imageRec)

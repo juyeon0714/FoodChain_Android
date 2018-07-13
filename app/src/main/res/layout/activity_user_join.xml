@@ -16,7 +16,7 @@
             android:layout_height="match_parent"
             android:text="소비자 회원가입"
             android:textColor="#000000"
-            android:textStyle="bold"
+            android:textSize="18dp"
             android:gravity="center"/>
 
     </RelativeLayout>
@@ -28,12 +28,13 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="460dp"
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
             android:orientation="vertical">
 
             <EditText
+                android:id="@+id/user_join_name"
                 android:layout_width="315dp"
                 android:layout_height="30dp"
                 android:hint="이름"
@@ -51,17 +52,23 @@
                 android:layout_height="30dp">
 
                 <EditText
+                    android:id="@+id/user_join_email"
                     android:layout_width="300dp"
                     android:layout_height="30dp"
                     android:hint="이메일"
                     android:textSize="11dp"
                     android:background="@android:color/transparent"
                     />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    />
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/yes_big_button" />/>
+                </RelativeLayout>
             </LinearLayout>
 
             <View
@@ -75,44 +82,62 @@
                 android:layout_height="30dp">
 
                 <EditText
-                    android:layout_width="300dp"
+                    android:id="@+id/user_join_pw"
+                    android:layout_width="315dp"
                     android:layout_height="30dp"
                     android:hint="비밀번호"
                     android:textSize="11dp"
                     android:background="@android:color/transparent"
                     />
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    />
             </LinearLayout>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#2E8B57"
                 android:layout_marginBottom="31dp"/>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
             <EditText
-                android:layout_width="315dp"
+                android:id="@+id/user_join_pwcheck"
+                android:layout_width="300dp"
                 android:layout_height="30dp"
                 android:hint="비밀번호 재확인"
                 android:textSize="11dp"
                 android:background="@android:color/transparent"
                 />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/user_pw_check"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/yes_big_button" />
+            </RelativeLayout>
+        </LinearLayout>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#2E8B57"
-                android:layout_marginBottom="31dp"/>
+                android:layout_marginBottom="35dp"/>
 
             <EditText
+                android:id="@+id/user_join_phone"
                 android:layout_width="315dp"
                 android:layout_height="30dp"
                 android:hint="전화번호"
                 android:textSize="11dp"
                 android:background="@android:color/transparent"
                 />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -120,18 +145,22 @@
                 android:layout_marginBottom="35dp"/>
 
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
             <CheckBox
                 android:id="@+id/checkBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="138dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
                 android:text="약관동의"
+                android:button="@drawable/checkbox_custom"
                 android:textColor="#2e8b57 "
-                android:textSize="11sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                tools:layout_editor_absoluteX="27dp" />
-            
+                android:textSize="11sp" />
+            </RelativeLayout>
 
         </LinearLayout>
 
@@ -142,8 +171,7 @@
             android:background="#2E8B57"
             android:text="가입하기"
             android:textColor="#FFFFFF"
+            android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true" />
-
     </RelativeLayout>
-
 </LinearLayout>

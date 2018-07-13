@@ -1,146 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+
+android:clickable="true"
+    >
+
+<android.support.design.widget.TabLayout
+    android:id="@+id/store_tab"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+</android.support.design.widget.TabLayout>
+
+<com.team.foodchain.CustomViewPager
+    android:id="@+id/store_viewpager"
+    android:layout_below="@+id/store_tab"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        //2맨위탭
-
-        <RelativeLayout
-            android:id="@+id/bottombar_toptopbar"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="30dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="14dp"
-                android:src="@drawable/logo" />
-
-            <ImageButton
-                android:id="@+id/bottombar_search"
-                android:layout_width="21dp"
-                android:layout_height="21dp"
-                android:layout_marginRight="16.7dp"
-                android:layout_marginTop="18dp"
-                android:layout_toLeftOf="@+id/bottombar_cart"
-                android:background="#ffffff"
-                android:src="@drawable/store_seach_icon"></ImageButton>
-
-            <ImageButton
-                android:id="@+id/bottombar_cart"
-                android:layout_width="21dp"
-                android:layout_height="21dp"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="16.7dp"
-                android:layout_marginTop="18dp"
-                android:background="#ffffff"
-                android:src="@drawable/cart_icon"
-
-                ></ImageButton>
-        </RelativeLayout>
-
-        //3두번째탭
-
-        <include layout="@layout/appbar_main"
-            android:id="@+id/toolbar_main_1"/>
-
-        <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="204dp"-->
-            <!--android:layout_gravity="fill_horizontal"-->
-            <!--android:layout_marginBottom="8dp"-->
-            <!--android:layout_marginTop="8dp"-->
-            <!--android:gravity="bottom">-->
-
-            <!--<ImageView-->
-                <!--android:layout_width="360dp"-->
-                <!--android:layout_height="203dp"-->
-                <!--android:src="@drawable/appimg_ex" />-->
-
-        <!--</LinearLayout>-->
-
-        <!--<RelativeLayout-->
-            <!--android:id="@+id/homeMenu"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="117dp">-->
-
-            <!--<LinearLayout-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="58dp"-->
-                <!--android:layout_marginLeft="16dp"-->
-                <!--android:layout_marginRight="16dp"-->
-                <!--android:orientation="horizontal">-->
-
-                <!--<ImageView-->
-                    <!--android:layout_width="87dp"-->
-                    <!--android:layout_height="58dp"-->
-                    <!--android:src="@drawable/cart_icon" />-->
-
-                <!--<ImageView-->
-                    <!--android:layout_width="87dp"-->
-                    <!--android:layout_height="58dp"-->
-                    <!--android:src="@drawable/cart_icon" />-->
-
-                <!--<ImageView-->
-                    <!--android:layout_width="87dp"-->
-                    <!--android:layout_height="58dp"-->
-                    <!--android:src="@drawable/cart_icon" />-->
-
-                <!--<ImageView-->
-                    <!--android:layout_width="87dp"-->
-                    <!--android:layout_height="58dp"-->
-                    <!--android:src="@drawable/cart_icon" />-->
-            <!--</LinearLayout>-->
-
-            <!--<LinearLayout-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="58dp"-->
-                <!--android:layout_alignParentBottom="true"-->
-                <!--android:layout_marginLeft="16dp"-->
-                <!--android:layout_marginRight="16dp">-->
-
-                <!--<ImageView-->
-                    <!--android:layout_width="87dp"-->
-                    <!--android:layout_height="58dp"-->
-                    <!--android:src="@drawable/cart_icon" />-->
-
-                <!--<ImageView-->
-                    <!--android:layout_width="87dp"-->
-                    <!--android:layout_height="58dp"-->
-                    <!--android:src="@drawable/cart_icon" />-->
-
-                <!--<ImageView-->
-                    <!--android:layout_width="87dp"-->
-                    <!--android:layout_height="58dp"-->
-                    <!--android:src="@drawable/cart_icon" />-->
-
-                <!--<ImageView-->
-                    <!--android:layout_width="87dp"-->
-                    <!--android:layout_height="58dp"-->
-                    <!--android:src="@drawable/cart_icon" />-->
-            <!--</LinearLayout>-->
-        <!--</RelativeLayout>-->
-
-        <!--<RelativeLayout-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_alignParentBottom="true">-->
-
-            <!--<ImageView-->
-                <!--android:id="@+id/coupon"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="60dp"-->
-                <!--android:layout_marginBottom="8dp"-->
-                <!--android:layout_marginTop="9dp"-->
-                <!--android:src="@drawable/couponbanner_ex" />-->
-        <!--</RelativeLayout>-->
+</com.team.foodchain.CustomViewPager>
 
 
-    </LinearLayout>
-</ScrollView>
+</RelativeLayout>
